@@ -41,27 +41,42 @@
 
         /* FLEXBOX */
         display: flex;
+
+        /*
+          To align items along main axis (horizontally, by default)
+          stretch, flex-start(default), flex-end, center, space-between, space-around, space-evenly
+        */
+        justify-content: center;
+
+        /*
+          To align items along cross axis (vertically, by default)
+          stretch(default), flex-start, flex-end, center, baseline
+        */
         align-items: center;
-        justify-content: flex-start;
-        gap: 10px;
+
+        /* To create space between items, without using margin, default is 0 */
+        gap: 5px;
       }
 
       .el {
         /*
-        DEFAULTS:
-        flex-grow: 0;
+          DEFAULTS:
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto;
+          */
+
+        /* flex-basis: 60px;
         flex-shrink: 1;
-        flex-basis: 0;
-        */
-        /* flex-basis: 200px; */
-        /* flex-shrink: 0;
         flex-grow: 1; */
+
+        flex: 1 1 60px;
 
         /* flex: 1; == flex-grow: 1; */
         /* flex: flex-grow flex-shrink flex-basis */
 
         /* flex: 0 0 200px; */
-        flex: 1;
+        /* flex: 1; */
       }
 
       .el--1 {
@@ -70,10 +85,11 @@
 
       .el--5 {
         align-self: stretch;
-        order: 1;
       }
 
       .el--6 {
+        /* first item */
+        /* default value is 0 */
         order: -1;
       }
     </style>
@@ -86,8 +102,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <!-- <div class="el el--7">to</div>
-      <div class="el el--8">learn</div> -->
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
     </div>
   </body>
 </html>
