@@ -156,9 +156,9 @@ li:last-child {
 }
 
 /* number, odd, even */
-li:nth-child(odd) {
-  /* color: red; */
-}
+/* li:nth-child(odd) {
+  color: red;
+} */
 
 /* Misconception: this won't work! The first element is header not a p  */
 article p:first-child {
@@ -230,7 +230,7 @@ h2::first-letter {
 }
 
 h3 + p::first-line {
-  /* color: red; */
+  color: green;
 }
 
 h2 {
@@ -239,7 +239,7 @@ h2 {
 }
 
 h2::after {
-  content: "TOP";
+  content: 'TOP';
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
