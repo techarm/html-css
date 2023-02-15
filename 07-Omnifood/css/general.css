@@ -52,6 +52,7 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,13 +79,7 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-  /* margin-bottom: 9.6rem; */
 }
-
-/* 
-.grid:last-child {
-  margin-bottom: 0;
-} */
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
